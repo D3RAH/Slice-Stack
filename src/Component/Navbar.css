@@ -1,0 +1,80 @@
+@import url('https://fonts.googleapis.com/css2?family=Italianno&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Oleo+Script+Swash+Caps&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Oleo+Script+Swash+Caps:wght@400;700&display=swap');
+.nav-container{
+    background-color: #0f0f0f;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-top: 20px 0;
+    color: #e0e0e0;
+    font-family: 'Oleo Script Swash Caps', cursive;
+    border-bottom: 2px solid #d4af37;
+}
+
+
+nav ul{
+    display: flex;
+    gap: 30px;
+    margin-left: 20px;
+    font-size: larger;
+    justify-content: center;
+    align-items: center;
+}
+
+nav ul li a {
+    color: #d4af37;
+    transition: 0.3s;
+    -webkit-transition: 0.3s;
+    -moz-transition: 0.3s;
+    -ms-transition: 0.3s;
+    -o-transition: 0.3s;
+}
+
+nav ul li a:hover{
+    color: #d4af37;
+}
+
+.nav-brand{
+    font-family: 'Oleo Script Swash Caps', cursive;
+    font-size: 2.5rem;
+    font-weight: bold;
+    color: #d4af37;
+   
+}
+
+.nav-component{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 25px;
+    margin-right: 30px;
+    font-size: x-large;
+}
+
+.nav-component i {
+    color: #d4af37;
+    transition: 0.3s;
+    -webkit-transition: 0.3s;
+    -moz-transition: 0.3s;
+    -ms-transition: 0.3s;
+    -o-transition: 0.3s;
+}
+.nav-component i:hover{
+    color: white;
+    cursor: pointer;
+    transform: scale(1.1);
+    -webkit-transform: scale(1.1);
+    -moz-transform: scale(1.1);
+    -ms-transform: scale(1.1);
+    -o-transform: scale(1.1);
+}
+
+
+
+@media (max-width:800px) {
+    .nav-container{
+        display: none;
+    }
+
+}
