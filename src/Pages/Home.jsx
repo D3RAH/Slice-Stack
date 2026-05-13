@@ -8,7 +8,7 @@ const Home = () => {
       <section className="home-container">
         <div className="main-text">
           <div className="home-header">
-            <h1>Get SliceStack</h1>
+            <h1>Get Slice</h1>
 
             <div className="home-paragraph">
               <p className="home-header-p">PIZZA FOR ANYONE ANYTIME..</p>
