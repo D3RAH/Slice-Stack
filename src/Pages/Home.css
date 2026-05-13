@@ -125,18 +125,29 @@
         background-position: center;
     }
     .home-header{
-        font-size: 35px;
-        margin-top: 250px;
+        font-size: 2.2rem;
+        margin-top: 150px;
+        padding: 0 20px;
+        width: 100%;
+        overflow-wrap: break-word;
     }
     .home-menu-box-image img{
         width: 100%;
-        height: auto;
-        max-height: 120px;
+        height: 100%;
+        object-fit: cover;
     }
     .home-menu-box-image{
         width: 100%;
-        height: auto;
-        max-height: 120px;
+        height: 120px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        overflow: hidden;
+    }
+
+    .main-text {
+        width: 100%;
+        max-width: 100vw;
     }
     
     
