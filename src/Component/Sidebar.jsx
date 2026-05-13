@@ -44,10 +44,10 @@ export const Sidebar = () => {
           <div>
             <ul>
               <li>
-                <Link to="/">Home</Link>
+                <Link to="/" onClick={sidebarClose}>Home</Link>
               </li>
               <li>
-                <Link to="/menu">Menu</Link>
+                <Link to="/menu" onClick={sidebarClose}>Menu</Link>
               </li>
               
               
