@@ -18,9 +18,18 @@
     
 }
 
-.home-header-p{
+.home-header-p {
     color: #d4af37;
     text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+    overflow: hidden;
+    white-space: nowrap;
+    border-right: .15em solid #d4af37;
+    margin: 0 auto;
+    display: block;
+    width: 0;
+    animation: 
+        typing 3.5s steps(30, end) forwards, 
+        blink-caret .75s step-end infinite;
 }
 
 .home-button{
@@ -135,7 +144,7 @@
     .home-header h1{
         font-size: 2.2rem;
         width: 100%;
-        margin-top: 0;
+        margin-top: 4rem;
         line-height: 1.2;
     }
 
@@ -153,7 +162,7 @@
         padding: 0;
     }
 
-    
+
     .home-menu-box-image img{
         width: 100%;
         height: 100%;
@@ -174,22 +183,45 @@
     }
     
     
-.home-menu-box-name{
-    font-size: 10px;
+    .home-menu-box-name{
+        font-size: 10px;
+    }
+
+    .home-menu-box-price{
+        font-size: 20px;
+    }
+
+    .home-menu-box{
+        grid-template-columns: 1fr 1fr;
+        gap: 15px;
+        padding: 0 10px;
+    }
+
+    .home-menu{
+        height: auto;
+        padding-bottom: 50px;
+    }
+
+    .home-header-p {
+        font-size: 14px;
+        letter-spacing: 0.02em;
+        width: 0;
+    }
+
+    .home-paragraph {
+        display: flex;
+        justify-content: center;
+        width: 100%;
+    }
 }
 
-.home-menu-box-price{
-    font-size: 20px;
+
+@keyframes typing {
+  from { width: 0 }
+  to { width: 27ch; }
 }
 
-.home-menu-box{
-    grid-template-columns: 1fr 1fr;
-    gap: 15px;
-    padding: 0 10px;
-}
-
-.home-menu{
-    height: auto;
-    padding-bottom: 50px;
-}
+@keyframes blink-caret {
+  from, to { border-color: transparent }
+  50% { border-color: #d4af37; }
 }
